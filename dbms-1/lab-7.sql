@@ -1,0 +1,56 @@
+------LAB-7b------
+
+CREATE TABLE Student_Marks
+(	Sid int not null, 
+	SName varchar (50) not null,
+	Marks int not null
+)
+INSERT INTO Student_Marks
+	VALUES (1, 'John',90),
+		   (2 ,'Martin',80),
+		   (3, 'Carol', 89),
+		   (4 ,'Jack', 99),
+		   (5 ,'Rose', 88),
+		   (6 ,'Mary', 90)
+
+
+
+
+---LAB-7a------
+
+--1
+SELECT GETDATE() AS 'TODAY_DATE'
+--2
+SELECT GETDATE()+365
+--3
+SELECT CONVERT(VARCHAR,GETDATE())
+--4
+SELECT CONVERT(VARCHAR,GETDATE(),106)
+--5
+SELECT CONVERT(VARCHAR,GETDATE(),7)
+--6
+SELECT DATEDIFF(MONTH,'31-DEC-08','31-MAR-09')
+--7
+SELECT DATEDIFF(YEAR,'25-JAN-12','14-SEP-10')
+--8
+SELECT DATEDIFF(HOUR,'25-JAN-12 7:00','26-Jan-12 10:30')
+--9
+SELECT DAY('12-May-16'),MONTH('12-May-16'),YEAR('12-May-16')
+--10
+SELECT DATEADD(YEAR,5,GETDATE())
+--11
+SELECT DATEADD(MONTH,-2,GETDATE())
+--12
+SELECT DATENAME(MONTH,GETDATE())
+--13
+SELECT EOMONTH(GETDATE())
+--14
+SELECT DATEADD(DAY,30,GETDATE()) SELECT GETDATE()+30
+--15
+SELECT DATEDIFF(YEAR,'21-MAY-05','22-mar-23')
+SELECT DATEDIFF(MONTH,'21-MAY-05','22-MAR-23')
+
+
+--agrigate function baki che
+
+
